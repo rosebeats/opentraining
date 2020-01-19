@@ -2,22 +2,25 @@
 buildscript {
   repositories {
     mavenCentral()
+      google()
   }
 
   dependencies {
-    classpath 'com.android.tools.build:gradle:1.1.0'
+    classpath 'com.android.tools.build:gradle:3.4.2'
   }
 }
 
 apply plugin: "com.android.application"
 
 repositories {
+  maven {
+    url 'https://maven.google.com'
+  }
   mavenCentral()
 }
 
 android {
   compileSdkVersion 21
-  buildToolsVersion "21.1.2"
 
   defaultConfig {
     minSdkVersion 14
@@ -44,8 +47,8 @@ android {
         srcDir "app/src"
       }
     }
-    instrumentTest.setRoot("test")
-    instrumentTest {
+    androidTest.setRoot("test")
+    androidTest {
       java.srcDirs = ["test/src"]
       res.srcDirs = ["test/res"]
       assets.srcDirs = ["test/assets"]
@@ -62,13 +65,11 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:21.0.3+'
-    compile 'com.android.support:appcompat-v7:21.0.3+'
-    compile fileTree(dir: 'app/libs', exclude: 'acra-*', include: '*.jar')
-    compile 'ch.acra:acra:4.5.0'
-    androidTestCompile 'com.jayway.android.robotium:robotium-solo:4.2'
-    compile 'org.quanqi:mpandroidchart:1.7.5'
-    compile 'com.nineoldandroids:library:2.4.0'
+    api 'com.android.support:support-v4:21.0.3+'
+    api 'com.android.support:appcompat-v7:21.0.3+'
+    api fileTree(dir: 'app/libs', exclude: 'acra-*', include: '*.jar')
+    api 'ch.acra:acra:4.5.0'
+    androidTestImplementation 'com.jayway.android.robotium:robotium-solo:4.2'
+    api 'org.quanqi:mpandroidchart:1.7.5'
+    api 'com.nineoldandroids:library:2.4.0'
 }
-
-task wrapper (type: Wrapper) { gradleVersion = "1.11" }

@@ -1,9 +1,6 @@
-Open Training is looking for a new maintainer
+Maintenance
 =============
-[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
-
-I don't have enough time to work regularly on this project anymore. If anyone wants to continue this project please contact me.
-
+I am hoping to begin working on this app although I cannot garuntee how much time I will have to.
 
 Open Training
 =============
@@ -13,14 +10,13 @@ Open Training is an Android app for planning your fitness training.
 
 Where can I download the app?
 -----------------------------
-Google Play Store: https://play.google.com/store/apps/details?id=de.skubware.opentraining
-
 F-Droid.org (catalogue of FOSS): https://f-droid.org/repository/browse/?fdid=de.skubware.opentraining
 
-You can also use this QR-Codes:
+You can also use this QR-Code:
 
-<a href='http://www.qrcode-generator.de' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https://play.google.com/store/apps/details?id=de.skubware.opentraining&chs=150x150&choe=UTF-8&chld=L|2' alt='qrcodes'></a>
 <a href='http://www.qrcode-generator.de' border='0' style='cursor:default'><img src='https://chart.googleapis.com/chart?cht=qr&chl=https://f-droid.org/repository/browse/?fdid=de.skubware.opentraining&chs=150x150&choe=UTF-8&chld=L|2' alt='hier qr code erstellen'></a>
+
+**Note**: this fork is not currently hosted.  The original app can be found on F-Droid, but this fork will need to be built from source.
 
 Programming language
 --------------------
